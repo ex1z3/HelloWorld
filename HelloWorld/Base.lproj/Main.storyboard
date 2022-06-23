@@ -15,9 +15,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3L-lG-Gbu">
+                                <rect key="frame" x="94.5" y="606" width="225" height="40"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="225" id="YoY-wR-z8I"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="24"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Show Greeting">
+                                    <color key="titleColor" red="1" green="0.85376381769999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="greetingButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="qL0-Xf-ius"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, World!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PFx-fi-73W">
-                                <rect key="frame" x="45" y="106" width="324" height="44.5"/>
-                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="38"/>
+                                <rect key="frame" x="42" y="144" width="330" height="49"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="42"/>
                                 <color key="textColor" red="1" green="0.85376381769999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -25,11 +40,17 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="PFx-fi-73W" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="62" id="ZVO-8A-N1W"/>
-                            <constraint firstItem="PFx-fi-73W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="hup-ux-Pfa"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PFx-fi-73W" secondAttribute="trailing" constant="45" id="rGk-zX-bv9"/>
+                            <constraint firstItem="S3L-lG-Gbu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FeK-1y-b1S"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="S3L-lG-Gbu" secondAttribute="bottom" constant="216" id="Z6K-MM-n5X"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PFx-fi-73W" secondAttribute="trailing" constant="42" id="c5A-4w-MHd"/>
+                            <constraint firstItem="PFx-fi-73W" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="igw-cd-Os4"/>
+                            <constraint firstItem="PFx-fi-73W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="42" id="pLh-n5-gHJ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="greetingButton" destination="S3L-lG-Gbu" id="Qzd-dI-cpg"/>
+                        <outlet property="greetingLable" destination="PFx-fi-73W" id="Avl-sV-PlO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
