@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,27 +15,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ixA-ha-35S">
-                                <rect key="frame" x="32" y="83" width="350" height="350"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor"/>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SGe-9a-jka">
-                                <rect key="frame" x="32" y="478" width="350" height="350"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
-                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, World!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PFx-fi-73W">
+                                <rect key="frame" x="45" y="106" width="324" height="44.5"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="38"/>
+                                <color key="textColor" red="1" green="0.85376381769999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SGe-9a-jka" secondAttribute="bottom" constant="34" id="5eL-qv-kNs"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ixA-ha-35S" secondAttribute="trailing" constant="32" id="7KL-XS-nKU"/>
-                            <constraint firstItem="SGe-9a-jka" firstAttribute="top" secondItem="ixA-ha-35S" secondAttribute="bottom" constant="45" id="Hf9-3W-VmZ"/>
-                            <constraint firstItem="SGe-9a-jka" firstAttribute="width" secondItem="ixA-ha-35S" secondAttribute="width" id="Hik-ML-PrD"/>
-                            <constraint firstItem="ixA-ha-35S" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="KpI-B8-RU4"/>
-                            <constraint firstItem="SGe-9a-jka" firstAttribute="height" secondItem="ixA-ha-35S" secondAttribute="height" id="Ss6-do-Huz"/>
-                            <constraint firstItem="ixA-ha-35S" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="39" id="lRC-KL-Gal"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SGe-9a-jka" secondAttribute="trailing" constant="32" id="oGF-i8-b76"/>
-                            <constraint firstItem="SGe-9a-jka" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="uqs-lV-Z1i"/>
+                            <constraint firstItem="PFx-fi-73W" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="62" id="ZVO-8A-N1W"/>
+                            <constraint firstItem="PFx-fi-73W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="hup-ux-Pfa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PFx-fi-73W" secondAttribute="trailing" constant="45" id="rGk-zX-bv9"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -45,12 +36,4 @@
             <point key="canvasLocation" x="34.782608695652179" y="97.767857142857139"/>
         </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-    </resources>
 </document>
