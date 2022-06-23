@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3L-lG-Gbu">
-                                <rect key="frame" x="94.5" y="606" width="225" height="40"/>
+                                <rect key="frame" x="94.5" y="604" width="225" height="42"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="225" id="YoY-wR-z8I"/>
@@ -26,6 +26,11 @@
                                 <state key="normal" title="Show Greeting">
                                     <color key="titleColor" red="1" green="0.85376381769999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <buttonConfiguration key="configuration" style="filled" title="Show Greeting" cornerStyle="capsule">
+                                    <fontDescription key="titleFontDescription" name="Menlo-Regular" family="Menlo" pointSize="24"/>
+                                    <color key="baseForegroundColor" red="1" green="0.85376381769999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="greetingButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="qL0-Xf-ius"/>
                                 </connections>
